@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.lynden.gmapsfx.GoogleMapView?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainController">
+   <children>
+      <VBox fx:id="altVbox" prefHeight="90.0" prefWidth="252.0">
+         <children>
+            <HBox fx:id="hBoxTop" prefHeight="100.0" prefWidth="500.0">
+               <children>
+                  <Label fx:id="nobetciEczaneLabel" prefHeight="0.0" prefWidth="0.0" text="Nöbetçi Ezcaneler" />
+                  <Label fx:id="ilceLabel" alignment="CENTER" contentDisplay="TOP" prefHeight="0.0" prefWidth="0.0" text="-----" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <VBox prefHeight="0.0" prefWidth="0.0">
+                     <children>
+                        <Label fx:id="tarihLabel" alignment="CENTER" contentDisplay="TOP" prefHeight="64.0" prefWidth="316.0" text="-----">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="textLabel" prefHeight="45.0" prefWidth="98.0" text="tarihleri arasıda nöbetçi listesi" />
+                     </children>
+                  </VBox>
+                  <Label fx:id="clockLabel" prefHeight="100.0" prefWidth="161.0" text="-----" />
+               </children>
+            </HBox>
+            <HBox fx:id="hBoxMiddle" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="250.0" minWidth="550.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="250.0" prefWidth="550.0">
+               <children>
+                  <Pane fx:id="paneWebView" maxHeight="0.0" maxWidth="0.0" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <GoogleMapView fx:id="mapWebView" prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </Pane>
+                  <VBox fx:id="eczaneInformationVBox" maxHeight="0.0" maxWidth="0.0" minHeight="0.0" minWidth="0.0" prefHeight="250.0" prefWidth="196.0" HBox.hgrow="NEVER">
+                     <children>
+                        <Label fx:id="eczaneAdLabel" text="-----" />
+                        <Label fx:id="eczaneAdresLabel" text="-----" />
+                        <Label fx:id="eczaneTarifLabel" text="-----" />
+                        <Label fx:id="eczaneTelLabel" text="Label" />
+                        <ImageView fx:id="qrImageView" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <GridPane fx:id="gridPane" maxHeight="0.0" maxWidth="0.0" minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="0.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </children></VBox>
+      <MediaView fx:id="promoMediaView" fitHeight="200.0" fitWidth="200.0" />
+      <Label fx:id="contextLabel" prefHeight="720.0" prefWidth="1219.0">
+         <contextMenu>
+            <ContextMenu fx:id="contextMenu">
+               <items>
+                  <MenuItem fx:id="yenileItem" mnemonicParsing="false" onAction="#yenile" text="Yenile">
+                     <graphic>
+                        <Separator />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem fx:id="tamekranItem" mnemonicParsing="false" onAction="#fullScrean" text="Tam Ekran">
+                     <graphic>
+                        <Separator />
+                     </graphic>
+                  </MenuItem>
+                  <MenuItem fx:id="ayarItem" mnemonicParsing="false" text="Ayarlar" />
+                  <MenuItem fx:id="reklamItem" mnemonicParsing="false" onAction="#reklamAc" text="Reklam Ac" />
+                  <MenuItem fx:id="reklamKapatItem" mnemonicParsing="false" onAction="#reklamKapat" text="Reklam Kapat" />
+                  <MenuItem fx:id="reklamIndirItem" mnemonicParsing="false" onAction="#promoDownloadAction" text="Reklam İndir" />
+                  <MenuItem fx:id="hakkindaItem" mnemonicParsing="false" onAction="#reklamAc" text="Hakkında" />
+                  <MenuItem fx:id="denemeItem" mnemonicParsing="false" onAction="#denemeEvent" text="Denemeler" />
+               </items>
+            </ContextMenu>
+         </contextMenu></Label>
+   </children>
+</AnchorPane>

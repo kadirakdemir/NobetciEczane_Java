@@ -1,0 +1,166 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#anchorPane{
+    -fx-max-height: "Infinity";
+    -fx-min-height: "Infinity";
+    -fx-max-width: "Infinity";
+    -fx-min-width: "Infinity";
+    -fx-pref-height: 720.0;
+    -fx-pref-width: 1280.0;
+    -fx-background-image: url("../images/anchorPaneBackground.jpg");
+}
+#denemeLabel{
+    -fx-font-size: 36;
+    -fx-font-family: "Times New Roman";
+     -fx-text-fill: red;
+}
+._root{
+    -fx-background-image: url("../images/anchorPaneBackground.jpg");
+}
+
+#hBoxTop{
+    -fx-translate-x: 10;
+    -fx-translate-y: 15;
+    -fx-pref-width: 1280;
+    -fx-pref-height: 108;
+    -fx-background-image: url("../images/hBoxTop.png");
+}
+
+#nobetciEczaneLabel{
+    -fx-translate-x: 10;
+    -fx-text-fill: white;
+    -fx-pref-width: 330;
+    -fx-pref-height: 108;
+    -fx-font-size: 40;
+
+}
+
+#ilceLabel{
+    -fx-font-size: 30;
+    -fx-pref-width: 300;
+    -fx-pref-height: 108;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+#tarihLabel{
+    -fx-min-width: 465;
+    -fx-pref-width: 465;
+    -fx-pref-height: 54;
+    -fx-font-size: 24;
+    -fx-text-fill: white;
+    -fx-alignment: bottom-left;
+    -fx-text-alignment: left;
+}
+
+#textLabel{
+
+    -fx-pref-width: 350;
+    -fx-pref-height: 54;
+    -fx-min-height: 54;
+    -fx-min-width: 350;
+    -fx-font-size: 20;
+    -fx-text-fill: white;
+    -fx-alignment: top-center;
+    -fx-text-alignment: center;
+}
+
+#clockLabel{
+    -fx-min-height: 108;
+    -fx-min-width: 100;
+    -fx-font-size: 65;
+    -fx-text-fill: #06abff;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+/* Pencere Orta Kısım*/
+#hBoxMiddle{
+    -fx-translate-x: 20;
+    -fx-translate-y: 30;
+    -fx-min-width: 500;
+    -fx-max-width: 1240;
+    -fx-min-height: 450;
+    -fx-background-color:#043365 ;
+}
+
+#mapWebView{
+    -fx-min-width: 20;
+    -fx-pref-width: 740;
+    -fx-pref-height: 430;
+    -fx-min-height: 430;
+
+}
+
+#paneWebView{
+    -fx-translate-x: 10;
+    -fx-translate-y: 10;
+    -fx-min-width: 740;
+    -fx-pref-width: 740;
+    -fx-pref-height: 430;
+    -fx-min-height: 430;
+}
+
+#eczaneInformationVBox{
+    -fx-translate-x: 30;
+    -fx-translate-y: 0;
+    -fx-min-width: 480;
+    -fx-pref-width: 480;
+    -fx-pref-height: 430;
+    -fx-min-height: 430;
+}
+
+#eczaneAdresLabel{
+
+    -fx-min-height: 54;
+    -fx-min-width: 150;
+    -fx-max-width: 450;
+    -fx-font-size: 16;
+    -fx-background-color:#395a86 ;
+    -fx-text-fill: white;
+
+    -fx-text-alignment: left;
+    -fx-label-padding: 10px;
+}
+#eczaneAdLabel{
+    -fx-min-height: 54;
+    -fx-min-width: 450;
+    -fx-font-size: 24;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+#eczaneTelLabel{
+    -fx-min-height: 54;
+    -fx-min-width: 450;
+    -fx-font-size: 24;
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+#gridPane{
+    -fx-translate-x: 20;
+    -fx-translate-y: 20;
+}
+
+#altVbox{
+    -fx-translate-x: 0;
+    -fx-translate-y: 0;
+    -fx-min-width: 20;
+    -fx-pref-width: 1260;
+    -fx-pref-height: 720;
+    -fx-min-height: 120;
+}
+
+#qrImageView{
+    -fx-translate-x: 120;
+    -fx-translate-y: 20;
+    -fx-fit-to-width: 200;
+    -fx-fit-to-height: 200;
+    -fx-min-width: 200;
+    -fx-min-height: 200;
+    -fx-alignment: center;
+}

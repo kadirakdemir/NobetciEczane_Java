@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+
+<AnchorPane fx:id="reklamAcnhorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PromoController">
+   <children>
+      <MediaView fx:id="promoMediaView" fitHeight="400.0" fitWidth="600.0" />
+      <Label fx:id="contextLabel" prefHeight="720.0" prefWidth="1280.0">
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" text="Durdur" />
+                  <MenuItem mnemonicParsing="false" text="Tam Ekaran" />
+                  <MenuItem mnemonicParsing="false" text="Çıkış" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </Label>
+   </children>
+</AnchorPane>
